@@ -47,8 +47,29 @@ main{
     text-align: center;
     width: 60%;
     font-size: 20px;
-    
-}
+
+    padding: 4rem 8rem;
+    display: inline-block;
+    border: 3px solid #333333;
+    font-size: 2.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
+    position: relative;
+}    
+.intro h2::before {
+        content: '';
+        border: 2px solid #353535;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
 
 .intro img{
     width: 300px;
@@ -59,6 +80,20 @@ img{
     height: 200px;
 }
 
+.project1sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.restofprojects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
 footer{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
