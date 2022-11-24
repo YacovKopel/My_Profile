@@ -7,11 +7,12 @@ header {
     padding: 30px;
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: var(--dark);
     color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 header nav {
     margin-right: 20px;
@@ -59,6 +60,8 @@ main{
     letter-spacing: 0.3ch;
     background: #ffffff;
     position: relative;
+    flex: 2 1 400px;
+    margin: 20px;
 }    
 .intro h2::before {
     content: '';
@@ -76,6 +79,7 @@ main{
 .intro img{
     width: 400px;
     height: 400px;
+    margin: 20px;
 }
 
 .octagon {
@@ -86,7 +90,7 @@ main{
 .box{
     margin:25px;
     width:250px;
-    height:250px;
+    height:350px;
     background:#fff;
     border: solid black;
     border-color: black;
@@ -111,12 +115,9 @@ main{
   }
 
 
-
-
-
 img{
-    width: 300px;
-    height: 200px;
+    width: 330px;
+    height: 185px;
 }
 
 .project1sec{
@@ -126,6 +127,19 @@ img{
     flex-direction: row;
     justify-content: center;
 }
+
+.project1sec .box{
+    width:750px;
+    height:350px;
+
+}
+#project1{
+    width: 90%;
+    height: 80%;
+    margin-left: 22px;
+}
+
+
 .restofprojects{
     display: flex;
     flex-wrap: wrap;
@@ -134,10 +148,12 @@ img{
     justify-content: center;
 }
 footer{
+    width: 100%;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    margin: 0px;
     
 }
 footer ul{
@@ -149,3 +165,38 @@ footer ul{
 footer ul li{
     display: inline-flex;
 }
+
+
+@media screen and (max-width: 768px) {
+    header nav{
+        font-size: 20px;
+    }
+    .intro{
+        flex-direction: column;
+        padding-bottom: 60px;
+        align-content: space-around;
+        align-items: center;
+    }
+    .intro h2{
+        width: 90%;
+    }
+    .intro img{
+        width: 250px;
+        height: 250px;
+    }
+  }
+  
+@media screen and (max-width: 576px) {
+    header{
+        width: 100%;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    header nav {
+        margin-right: 20px;
+        font-size: 18px;
+    }
+  }
+
+  
