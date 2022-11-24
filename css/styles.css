@@ -2,12 +2,14 @@
     --dark:#264653;
     --light:#2a9d8f;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     
 }
+
 header {
     padding: 30px;
     width: 100%;
@@ -19,6 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 header nav {
     margin-right: 20px;
     float: right;
@@ -39,9 +42,11 @@ a {
     color: var(--light);
     text-decoration: none;
 }
+
 main{
     background-color: #e9c46a;
 }
+
 .intro{
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +54,8 @@ main{
     justify-content: space-evenly;
     padding-bottom: 60px;
 }
-.intro h2{
+
+.intro p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     width: 60%;
@@ -67,7 +73,8 @@ main{
     flex: 2 1 400px;
     margin: 20px;
 }    
-.intro h2::before {
+
+.intro p::before {
     content: '';
     border: 2px solid #353535;
     display: block;
@@ -122,6 +129,7 @@ main{
 img{
     width: 330px;
     height: 185px;
+    margin-left: 7px;
 }
 
 .project1sec{
@@ -137,12 +145,18 @@ img{
     height:350px;
 
 }
+
+img{
+    width: 330px;
+    height: 185px;
+    margin-left: 7px;
+}
+
 #project1{
     width: 90%;
     height: 80%;
     margin-left: 22px;
 }
-
 
 .restofprojects{
     display: flex;
@@ -181,7 +195,7 @@ footer ul li{
         align-content: space-around;
         align-items: center;
     }
-    .intro h2{
+    .intro p{
         width: 90%;
     }
     .intro img{
