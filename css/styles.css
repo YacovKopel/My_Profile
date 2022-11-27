@@ -43,7 +43,7 @@ a {
     color: var(--light);
     text-decoration: none;
 }
-/* colors background for maain section */
+/* colors background for main section */
 main{
     background-color: #e9c46a;
 }
@@ -99,7 +99,7 @@ main{
     		clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-/* creates the box fro the each project */
+/* creates the box for the each project */
 .box{
     margin:25px;
     width:250px;
@@ -118,7 +118,7 @@ main{
     transform: rotate(-2deg);
 }
 
-/* creates that label within the boxes for titles */
+/* creates the label within the boxes for titles */
 .evenboxinner{
     transform: rotate(2deg);
     margin:15px;
